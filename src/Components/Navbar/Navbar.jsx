@@ -26,6 +26,7 @@ const Navbar = () => {
           <input className='flex-1 outline-none px-3 h-[4vh]' type="text" id='text' placeholder='Search...' autoComplete='off' />
           <button className='bg-linear-to-b  from-orange-400 to-orange-600 rounded-full w-10 h-10 text-xl flex justify-center items-center text-white'><IoSearch/></button>
           </div>
+          {/* Icons */}
           <a href="#" className='text-zinc-800 text-2xl'><GoHeartFill /></a>
           <a href="#" className='text-zinc-800 text-2xl'><HiMiniShoppingBag /></a>
         </div>
