@@ -5,6 +5,7 @@ import Button from './Button/Button'
 const Cards = ({image, name, price, id}) => {
     return (
         <div className='bg-zinc-100 p-5 rounded-xl' key={id}>
+            
             {/* Card Icons */}
             <div className="flex justify-between">
                 <span className='text-3xl text-zinc-300'>

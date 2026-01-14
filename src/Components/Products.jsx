@@ -18,11 +18,11 @@ const Products = () => {
     })
 
     return (
-        <section className='max-w-350 mx-auto px-10 py-20'>
+        <section className='max-w-350 mx-auto px-10 py-5'>
             <Heading highlight='Our' Heading='Products' />
 
             {/* Tabs */}
-            <div className='flex gap-3 justify-center items-center'>
+            <div className='flex flex-wrap gap-3 justify-center items-center mt-10'>
                 {categories.map(category => {
                     return (
                         <button key={category} className={` text-lg px-5 py-2 rounded-lg cursor-pointer  
@@ -35,7 +35,7 @@ const Products = () => {
                 })}
             </div>
             {/* Product Listing */}
-            <div className="grid grid-cols-4 gap-9 mt-20">
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 gap-9 mt-20">
                 {renderCards}
             </div>
 

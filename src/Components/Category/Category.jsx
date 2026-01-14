@@ -31,7 +31,7 @@ const Category = () => {
                 <Heading highlight='Shop' Heading='by Category' />
             </div>
             {/* Category cards */}
-             <div className="flex gap-10 md:mt-10 mt-5 flex-wrap">
+             <div className="flex gap-10 md:mt-8 mt-3 flex-wrap">
               {renderCards}
              </div>
         </section>
