@@ -4,8 +4,6 @@ import FruitsCat from '../../assets/fruits-and-veggies.png'
 import SeaFoodCat from '../../assets/meat-and-seafood.png'
 import DairyCat from '../../assets/dairy-and-eggs.png'
 import { Link } from 'react-router-dom'
-import { path } from 'framer-motion/client'
-
 const Category = () => {
 
     const renderCards = category.map(card => {
