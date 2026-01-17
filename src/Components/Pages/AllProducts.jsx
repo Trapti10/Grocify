@@ -5,7 +5,7 @@ import CategoryPage from '../CategoryPage/CategoryPage'
 
 const AllProducts = () => {
   return (
-    <CategoryPage title="All Products" bgImage={allBG}/>
+    <CategoryPage title="All Products" bgImage={allBG} categories={'All'}/>
   )
 }
 

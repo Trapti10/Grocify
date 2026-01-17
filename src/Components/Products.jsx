@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Products = () => {
 
+
     const categories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'SeaFood']
     const [activeTab, setActiveTab] = useState('All')
 
@@ -26,7 +27,7 @@ const Products = () => {
             <div className='flex flex-wrap gap-3 justify-center items-center mt-10'>
                 {categories.map(category => {
                     return (
-                        <button key={category} className={` text-lg px-5 py-2 rounded-lg cursor-pointer  
+                        <button key={category} className={` text-lg px-5 py-2 rounded-lg cursor-pointer hover:scale-110 transition-all duration-200 
                         ${activeTab === category ? 'text-white bg-linear-to-b from-orange-400 to-orange-500' : 'bg-zinc-200'}`}
                             onClick={() => setActiveTab(category)}>
                             {category}
@@ -42,7 +43,7 @@ const Products = () => {
 
             {/* View All button */}
             <div className="mt-15 mx-auto w-fit">
-            <Link to='/allproducts' className='bg-linear-to-b from-orange-400 to-orange-600 text-white border-none rounded-lg md:text-lg text-md px-8 py-3 hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer'>
+            <Link to='/allproducts' className='bg-linear-to-b from-orange-400 to-orange-600 text-white border-none rounded-lg md:text-lg text-md px-8 py-3 hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer' >
              View All
             </Link>
             </div>

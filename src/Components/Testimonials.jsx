@@ -2,7 +2,7 @@ import React from 'react'
 import Heading from './Heading/Heading'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -40,7 +40,12 @@ const Testimonials = () => {
                     768:{slidesPerView:2, spaceBetween:20},
                     1024:{slidesPerView:3, spaceBetween:20}
                 }}
-                modules={[Navigation]} className="mySwiper">
+                modules={[Navigation, Autoplay]} className="mySwiper"
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction:false,
+                }}    
+                >
                     {
                         review.map(item => {
                             return (

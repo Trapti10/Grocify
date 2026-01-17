@@ -4,6 +4,7 @@ import { HiMiniShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TbMenu3 } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -26,9 +27,9 @@ const Navbar = () => {
     <div className={`bg-white fixed right-0 left-0 z-20 ${isscrolled ? 'drop-shadow-[0_4px_25px_rgba(0,0,0,0.2)]' : ' '}`}>
       <nav className='max-w-350 mx-auto px-10 md:h-[14vh]  flex h-[12vh] justify-between items-center'>
         {/* Logo */}
-        <a href="#" className='text-3xl font-bold'>
+        <Link href="/" className='text-3xl font-bold'>
           Gr<span className='text-orange-500 uppercase'>o</span>cify
-        </a>
+        </Link>
 
         {/* Desktop menu */}
         <ul className='md:flex items-center gap-5 hidden'>
